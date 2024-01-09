@@ -1,0 +1,34 @@
+> sudo apt update
+
+> sudo apt -y install vnc4server
+
+> sudo apt install lxde-core 
+
+> sudo adduser 
+
+> vncpasswd
+
+> sudo apt-get install nano
+
+> vncserver -geometry 1024x768
+
+> vncserver -kill :1
+
+> mv ~/.vnc/xstartup ~/.vnc/xstartup.bak
+ 
+> nano /root/.vnc/xstartup      
+ 
+> #!/bin/bash
+
+xrdb $HOME/.Xresources
+
+startxfce4 &
+
+/usr/bin/startlxde
+
+> sudo chmod +x ~/.vnc/xstartup  
+
+> vncserver 
+
+
+> custom port "5901"
